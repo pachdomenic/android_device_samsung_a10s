@@ -29,3 +29,5 @@ Blobs version:
 > Kernel base: Compiled from source.
 > Ramdisk, DTB, DTBO base: A125FXXU2BVB4
 
+Working;
+All.
