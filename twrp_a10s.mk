@@ -13,10 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-DEVICE_PATH := device/samsung/a12
+DEVICE_PATH := device/samsung/a10s
 
 # Release name
-PRODUCT_RELEASE_NAME := a12
+PRODUCT_RELEASE_NAME := a10s
 
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
@@ -34,9 +34,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(DEVICE_PATH)/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := twrp_a12
-PRODUCT_DEVICE := a12
-PRODUCT_MODEL := SM-A125F
+PRODUCT_NAME := twrp_a10s
+PRODUCT_DEVICE := a10s
+PRODUCT_MODEL := SM-A107F
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
