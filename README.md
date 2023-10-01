@@ -15,7 +15,7 @@ $ git clone https://github.com/pachdomenic/android_device_samsung_a10s -b androi
 $ repo sync --no-repo-verify -c --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j`nproc`
 
 # Build
-$ source build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; lunch twrp_a12-eng; mka recoveryimage
+$ source build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; lunch twrp_a10s-eng; mka recoveryimage
 
 # Disable File Based Encryption (FBE) after installing TWRP.
 $ Boot TWRP; format DATA partition; start TWRP SHELL; execute: multidisabler.
