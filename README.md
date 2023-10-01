@@ -1,4 +1,4 @@
-## Recovery Device Tree for the Samsung Galaxy A12 (MTK)
+## Recovery Device Tree for the Samsung Galaxy A10s
 
 ## How-to compile it:
 
