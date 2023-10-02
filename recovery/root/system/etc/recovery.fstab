@@ -43,7 +43,6 @@
 /dev/block/platform/bootdevice/by-name/para        /misc           emmc        defaults                  recoveryonly
 
 # external SD card
-/dev/block/mmcblk1p1                               /sdcard         sdfat       defaults                  recoveryonly
 
 # FOTA
 /dev/block/platform/bootdevice/by-name/apnhlos     /modem          emmc        defaults                  recoveryonly
