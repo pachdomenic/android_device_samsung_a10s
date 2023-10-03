@@ -25,7 +25,7 @@ export FOX_VERSION=R11.1_2
 export OF_MAINTAINER=pachadomenic
 
 #Scaling fix
-export OF_SCREEN_H=1520
+export OF_SCREEN_H=2280
 export OF_STATUS_H=55
 export OF_STATUS_INDENT_LEFT=60
 export OF_STATUS_INDENT_RIGHT=60
