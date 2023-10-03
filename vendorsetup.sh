@@ -22,7 +22,7 @@ export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
 
 # maintanier thingys
 export FOX_VERSION=R11.1_2
-export OF_MAINTAINER=pachadomenic
+export OF_MAINTAINER=LEO-HATARI-0305
 
 #Scaling fix
 export OF_SCREEN_H=1520
