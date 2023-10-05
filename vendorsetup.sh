@@ -18,10 +18,12 @@ export FOX_USE_XZ_UTILS=1
 export OF_ENABLE_LPTOOLS=1
 export OF_PATCH_AVB20=1
 export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
-
-
+export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/bootdevice/by-name/system"
+export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/bootdevice/by-name/vendor"
+export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/bootdevice/by-name/recovery"
+export FOX_RECOVERY_BOOT_PARTITION="/dev/block/bootdevice/by-name/boot"
 # maintanier thingys
-export FOX_VERSION=R11.1_2
+export FOX_VERSION=R11.1_1
 export OF_MAINTAINER=pachadomenic
 
 #Scaling fix
