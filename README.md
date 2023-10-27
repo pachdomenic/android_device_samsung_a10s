@@ -8,7 +8,7 @@ $ mkdir tw; cd tw
 # Init repo
 $ repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
 
-# Clone a12 repo
+# Clone repo
 $ git clone https://github.com/HATARI-0305/android_device_samsung_a10s -b android-11.0 device/samsung/a10s
 
 # Sync
