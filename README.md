@@ -1,24 +1,29 @@
-## Recovery Device Tree for the Samsung Galaxy A10s
+Copyright (C) 2023 The Open Source Project
 
-## How-to compile it:
+> **NOTE: THIS DEVICE TREE IS UNSTESTED, SO WE NEVER KNOW**
 
-# Create dirs
-$ mkdir tw; cd tw
+Device configuration for Samsung Galaxy A10s
+============================================
 
-# Init repo
-$ repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
+The Samsung Galaxy A10s (codenamed _"a10s"_) is a low-end smartphone from Samsung.
 
-# Clone repo
-$ git clone https://github.com/HATARI-0305/android_device_samsung_a10s -b android-11.0 device/samsung/a10s
+It was announced in August 2019.
 
-# Sync
-$ repo sync --no-repo-verify -c --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j`nproc`
+## Device specifications
 
-# Build
-$ source build/envsetup.sh; export ALLOW_MISSING_DEPENDENCIES=true; lunch twrp_a10s-eng; mka recoveryimage
+Basic   | Spec Sheet
+-------:|:-------------------------
+CPU     | Octa-core 2.0 GHz Cortex-A53
+Chipset | MediaTek Helio P22 (MT6762)
+GPU     | PowerVR GE 8320
+Memory  | 2/3 GB RAM
+Shipped Android Version | 9.0
+Storage | 32 GB (eMMC 5.1)
+Battery | Non-removable Li-Po 4000 mAh
+Display | 720 x 1520 pixels, 6.2 inches (~271 ppi pixel density)
+Main Camera  | 13MP main camera & 2MP depth camera, LED flash
+Selfie Camera | 8MP 
 
-# Disable File Based Encryption (FBE) after installing TWRP.
-$ Boot TWRP; format DATA partition; start TWRP SHELL; execute: multidisabler.
-Your DATA partition will be secured against re-encryption.
+## Device picture
 
-
+![Samsung Galaxy A10s](https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a10s-1.jpg)

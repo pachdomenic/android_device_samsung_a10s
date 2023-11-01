@@ -1,11 +1,11 @@
 #
-# Copyright (C) 2020 The Android Open Source Project
+# Copyright 2018 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-# http://www.apache.org/licenses/LICENSE-2.0
+#      http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -14,10 +14,26 @@
 # limitations under the License.
 #
 
-# Dynamic partitions
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
+# Resolution
+TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1520
 
-# fastbootd
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+
+# Fastbootd
+TW_INCLUDE_FASTBOOTD := true
+
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock \
-    fastbootd
+	android.hardware.fastboot@1.1-impl-mock \
+	fastbootd
+
+PRODUCT_PRODUCT_PROPERTIES += \
+	ro.fastbootd.available=true
+
+# API level, the device has been commercially launched on
+PRODUCT_SHIPPING_API_LEVEL := 30
+
+# Recovery Modules
+PRODUCT_HOST_PACKAGES += \
+    libandroidicu
